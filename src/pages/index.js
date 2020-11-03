@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import layoutStyles from "../styles/layoutStyles.module.scss"
 import Intro from "../components/intro"
+import Video from "../components/video"
 
 export default function Home({ data }) {
   return (
@@ -14,6 +15,7 @@ export default function Home({ data }) {
         alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
       />
       <Intro />
+      <Video />
     </Layout>
   )
 }
