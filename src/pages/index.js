@@ -7,18 +7,16 @@ import layoutStyles from "../styles/layoutStyles.module.scss"
 export default function Home({ data }) {
   return (
     <Layout>
-      <h1>Hello World!</h1>
-      <p>Time to make it happen...</p>
       <Img
         className={layoutStyles.imgResponsive}
-        fluid={data.img01.childImageSharp.fluid}
+        fluid={data.img04.childImageSharp.fluid}
         alt="paragliding"
       />
     </Layout>
   )
 }
 
-// paths relative to "gatsby-source-filesystem" in gatsby-config. ie: src/data
+// paths relative to "gatsby-source-filesystem" in gatsby-config. ie: src/images/
 export const query = graphql`
   query {
     img01: file(relativePath: { eq: "01.jpg" }) {
@@ -59,13 +57,6 @@ export const query = graphql`
     img04Fixed: file(relativePath: { eq: "04.jpg" }) {
       childImageSharp {
         fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    projectAirtimeLogo: file(relativePath: { eq: "project-airtime-logo.gif" }) {
-      childImageSharp {
-        fixed(width: 300) {
           ...GatsbyImageSharpFixed
         }
       }
