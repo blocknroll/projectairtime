@@ -3,18 +3,18 @@
 
 .section {
   background-color: $blue-darkest;
-}
 
-h2 {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 200;
-  text-align: center;
-}
+  h2 {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-p {
-  color: white;
-  font-weight: 200;
-  line-height: 1.5;
-  margin: 0 auto 5vh;
+  p {
+    color: white;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0 auto 5vh;
+  }
 }
