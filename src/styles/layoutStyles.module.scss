@@ -9,3 +9,10 @@ body {
 .layout {
   background-color: $blue-darker;
 }
+
+.imgResponsive {
+  height: auto;
+  margin: 0 auto 0 auto;
+  max-width: 100%;
+  overflow: visible !important;
+}
