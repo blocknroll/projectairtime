@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import layoutStyles from "../styles/layoutStyles.module.scss"
+import Intro from "../components/intro"
 
 export default function Home({ data }) {
   return (
@@ -10,13 +11,14 @@ export default function Home({ data }) {
       <Img
         className={layoutStyles.imgResponsive}
         fluid={data.img04.childImageSharp.fluid}
-        alt="paragliding"
+        alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
       />
+      <Intro />
     </Layout>
   )
 }
 
-// paths relative to "gatsby-source-filesystem" in gatsby-config. ie: src/images/
+// paths relative to "./src/images/" defined in gatsby-config.js > gatsby-source-filesystem
 export const query = graphql`
   query {
     img01: file(relativePath: { eq: "01.jpg" }) {
