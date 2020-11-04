@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import layoutStyles from "../styles/layoutStyles.module.scss"
 import Intro from "../components/intro"
 import Video from "../components/video"
+import News from "../components/news"
 
 export default function Home({ data }) {
   return (
@@ -16,6 +17,7 @@ export default function Home({ data }) {
       />
       <Intro />
       <Video />
+      <News />
     </Layout>
   )
 }
