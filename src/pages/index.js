@@ -6,6 +6,7 @@ import layoutStyles from "../styles/layoutStyles.module.scss"
 import Intro from "../components/intro"
 import Video from "../components/video"
 import News from "../components/news"
+import Sponsors from "../components/sponsors"
 
 export default function Home({ data }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ data }) {
       <Intro />
       <Video />
       <News />
+      <Sponsors />
     </Layout>
   )
 }
