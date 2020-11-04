@@ -17,8 +17,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/k2-cvuGmWvc"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
 
@@ -31,8 +30,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/5jLUtWCr9fQ"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
 
@@ -45,8 +43,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/CJFugtJlC_s"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
 
@@ -59,8 +56,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/rX511v45TIU"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
 
@@ -103,8 +99,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/3HqPbHUSeU4"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
 
@@ -117,8 +112,7 @@ export default function Video() {
             height="315"
             src="https://www.youtube.com/embed/VzrlexXcEtM"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allow="fullscreen"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
           ></iframe>
         </div>
       </Container>

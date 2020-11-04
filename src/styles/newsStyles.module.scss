@@ -1,0 +1,35 @@
+@import "colors";
+@import "typography";
+
+.section {
+  background-color: white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80vw;
+    padding: 03vh;
+  }
+
+  h2 {
+    color: $blue-darkest;
+    font-weight: 500;
+    margin: 30px 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $blue-darkest;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0 auto 5vh;
+  }
+
+  .logo {
+    margin: 0 auto 50px;
+    max-width: 220px;
+  }
+}
