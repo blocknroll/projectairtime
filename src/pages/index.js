@@ -7,6 +7,7 @@ import Intro from "../components/intro"
 import Video from "../components/video"
 import News from "../components/news"
 import Sponsors from "../components/sponsors"
+import About from "../components/about"
 
 export default function Home({ data }) {
   return (
@@ -20,6 +21,7 @@ export default function Home({ data }) {
       <Video />
       <News />
       <Sponsors />
+      <About />
     </Layout>
   )
 }
