@@ -8,6 +8,7 @@ import Video from "../components/video"
 import News from "../components/news"
 import Sponsors from "../components/sponsors"
 import About from "../components/about"
+import Form from "../components/form"
 
 export default function Home({ data }) {
   return (
@@ -22,6 +23,7 @@ export default function Home({ data }) {
       <News />
       <Sponsors />
       <About />
+      <Form />
     </Layout>
   )
 }
