@@ -1,0 +1,213 @@
+@import "colors";
+@import "typography";
+
+.section {
+  background-color: $blue-medium;
+
+  .container {
+    margin: 0 auto;
+    width: 400px;
+    padding: 03vh;
+  }
+
+  h2 {
+    color: $white;
+    font-weight: 500;
+    margin: 20px 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+// FORM /////////////////////////////////////////
+form {
+  padding: 1em;
+  background-color: $blue-medium;
+  border: 1px solid $blue-darker;
+  box-shadow: 0px 1px 1px $blue-darker;
+  display: block;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 3em 1.5em 0.5em 1.5em;
+  transition: box-shadow 250ms ease-out, transform 250ms ease-out;
+
+  // Media Queries
+  @media screen and (min-width: 35em) {
+    max-width: 70vw;
+    padding: 1em 2em 0.5em 2em;
+  }
+}
+
+// FOCUS EFFECT /////////////////////////////////
+form:focus-within {
+  box-shadow: 0px 0.2em 1.5em white;
+  transform: scale(1.025);
+
+  // Remove for those who don't want animation.
+  @media screen and (prefers-reduced-motion: reduce) {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+// LABELS ///////////////////////////////////////
+label {
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  transition: color 125ms ease-out;
+
+  &:focus-within {
+    color: $blue-darkest;
+  }
+}
+
+// INPUTS ///////////////////////////////////////
+input[type="email"],
+input[type="text"],
+input[type="number"],
+textarea {
+  appearance: none;
+  box-sizing: border-box;
+  border: 1px solid $blue-medium;
+  border-radius: 0;
+  display: block;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em 0 0.8em;
+  outline: 0px;
+  padding: 0.4em;
+  width: 100%;
+  transition: border-color 125ms, outline 125ms;
+
+  &:hover {
+    border-color: $blue-darkest;
+  }
+
+  &:focus {
+    border-color: $blue-darkest;
+    outline: 1px solid $blue-darkest;
+  }
+}
+
+// RADIO BUTTONS ////////////////////////////////
+fieldset {
+  position: relative;
+  border: 1px solid white;
+  padding: 20px 20px 10px;
+  margin: 2em 0 1.4em;
+
+  &:focus-within {
+    border: 1px solid $blue-darkest;
+  }
+
+  legend {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 1;
+    margin: -9px 0 0 -2px; /* half of font-size */
+    background: $blue-medium;
+    color: white;
+    padding: 0 10px;
+    letter-spacing: 0.025em;
+  }
+
+  label {
+    margin-bottom: 14px;
+    position: relative; /* to contain absolute elements */
+    padding-left: 30px; /* make space for custom radio button */
+  }
+
+  /* hide default radio button  */
+  label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* custom radio button */
+  label span {
+    position: absolute; /* position in the free space in <label> */
+    top: 1px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 250ms;
+  }
+
+  /* 'selected' radio button */
+  label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  label:hover {
+    color: $blue-darker;
+  }
+
+  label:hover span {
+    background-color: $blue-darker;
+  }
+
+  label input:checked ~ span {
+    background-color: $blue-darkest;
+  }
+
+  label input:checked ~ span:after {
+    display: block;
+  }
+}
+
+// TEXT AREA ////////////////////////////////////
+textarea {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  min-height: 4em;
+  overflow: auto;
+  resize: vertical;
+}
+
+// BUTTON ///////////////////////////////////////
+input[type="submit"] {
+  background-color: $blue-darker;
+  border: 1px solid $blue-darkest;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 0.025em;
+  margin: 0.5em auto;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: background-color 125ms ease-out;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 3px white, 0 0 0 6px $blue-darkest;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($blue-darker, 10%);
+    text-decoration: underline;
+  }
+
+  &:active {
+    background-color: darken($blue-darker, 20%);
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+    transition: none;
+  }
+}
