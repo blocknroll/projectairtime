@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./header"
 import Logo from "./logo"
+import Footer from "./footer"
 import layoutStyles from "../styles/layoutStyles.module.scss"
 
 export default function Layout({ children }) {
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
         <Logo />
       </Header>
       {children}
+      <Footer />
     </div>
   )
 }

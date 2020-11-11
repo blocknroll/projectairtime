@@ -1,0 +1,56 @@
+@import "colors";
+@import "typography";
+
+.section {
+  background-color: $blue-darkest;
+
+  .container {
+    margin: 0 auto;
+    padding: 50px;
+
+    @media screen and (min-width: 550px) {
+      font-size: 1.2em;
+      max-width: 80vw;
+    }
+  }
+
+  .address {
+    p {
+      color: $blue-lighter;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 30px;
+    width: 300px;
+
+    a {
+      color: $blue-darker;
+      font-size: 3em;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:focus {
+      // https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/
+      color: white;
+      outline: thin dotted white;
+      outline-offset: 3px;
+    }
+  }
+
+  .copyright {
+    color: $blue-darker;
+    font-size: 0.7em;
+    text-align: center;
+  }
+}
