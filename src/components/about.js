@@ -4,7 +4,7 @@ import videoStyles from "../styles/videoStyles.module.scss"
 
 export default function About() {
   return (
-    <section className={aboutStyles.section}>
+    <section className={aboutStyles.section} id="about">
       <div className={aboutStyles.container}>
         <h2>About Us</h2>
         <p>

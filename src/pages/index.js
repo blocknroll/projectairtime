@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import layoutStyles from "../styles/layoutStyles.module.scss"
 import Intro from "../components/intro"
 import Video from "../components/video"
 import News from "../components/news"
@@ -14,7 +13,6 @@ export default function Home({ data }) {
   return (
     <Layout>
       <Img
-        className={layoutStyles.imgResponsive}
         fluid={data.img04.childImageSharp.fluid}
         alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
       />

@@ -1,8 +1,129 @@
+@import "colors";
+
+// breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 header {
   background-color: white;
+  border-bottom: 1px solid $blue-medium;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  height: 56px;
 }
 
 .logo {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 280px;
+  padding-left: 20px;
+
+  img {
+    padding-right: 10px; // balance white space around logo
+  }
+
+  a[aria-current="page"]:focus {
+    color: $blue-darkest;
+    outline: thin dotted $blue-darker;
+  }
+}
+
+.site-navigation {
+  .hamburger {
+    color: $blue-medium;
+  }
+
+  button:focus {
+    // https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/
+    outline: thin dotted $blue-darker;
+    outline-offset: 3px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    color: $blue-darker;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $blue-darkest;
+      outline: thin dotted $blue-darker;
+      outline-offset: 3px;
+    }
+  }
+
+  .menu-trigger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  // TOGGLE MENU ////////////////////////////////
+  @media (max-width: 1100px) {
+    .menu-trigger {
+      display: flex;
+      margin: 7px 20px 0 0;
+    }
+
+    .menu-trigger.is-active + ul {
+      display: block;
+    }
+
+    ul {
+      border-left: 1px solid $blue-medium;
+      border-bottom: 1px solid $blue-medium;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 56px;
+      z-index: 1;
+      width: 100%;
+      max-width: 200px;
+      overflow: hidden;
+      background-color: white;
+      margin: 0;
+
+      li {
+        display: block;
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: $blue-darker;
+      display: block;
+      padding: 20px;
+
+      &:hover,
+      &:focus {
+        background-color: $blue-lighter;
+        color: $blue-darkest;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
 }
