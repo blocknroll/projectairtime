@@ -3,7 +3,7 @@ import formStyles from "../styles/formStyles.module.scss"
 
 export default function Form() {
   return (
-    <section className={formStyles.section}>
+    <section className={formStyles.section} id="contact">
       <div className={formStyles.container}>
         <h2>Contact Us!</h2>
 

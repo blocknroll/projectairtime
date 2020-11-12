@@ -3,7 +3,7 @@ import sponsorStyles from "../styles/sponsorStyles.module.scss"
 
 export default function Sponsors() {
   return (
-    <section className={sponsorStyles.section}>
+    <section className={sponsorStyles.section} id="sponsors">
       <div className={sponsorStyles.container}>
         <h2>Sponsors + Supporters</h2>
 

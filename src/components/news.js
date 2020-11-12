@@ -8,7 +8,7 @@ import pioneerPressLogo from "../images/news/pioneer_press_logo.png"
 
 export default function News() {
   return (
-    <section className={newsStyles.section}>
+    <section className={newsStyles.section} id="news">
       <div className={newsStyles.container}>
         <h2>News</h2>
 

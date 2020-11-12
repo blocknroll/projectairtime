@@ -4,7 +4,7 @@ import introStyles from "../styles/introStyles.module.scss"
 
 export default function Intro() {
   return (
-    <section className={introStyles.section}>
+    <section className={introStyles.section} id="intro">
       <Container>
         <h2>What is Project Airtime?</h2>
         <p>

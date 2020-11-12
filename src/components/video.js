@@ -4,7 +4,7 @@ import videoStyles from "../styles/videoStyles.module.scss"
 
 export default function Video() {
   return (
-    <section className={videoStyles.section}>
+    <section className={videoStyles.section} id="video">
       <Container>
         <h2>Videos</h2>
 
