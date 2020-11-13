@@ -23,27 +23,36 @@ header {
 .logo {
   margin: 0 auto;
   max-width: 280px;
-  padding-left: 20px;
+  padding-left: 14px;
 
   img {
     padding-right: 10px; // balance white space around logo
   }
 
+  a:hover,
+  a:focus {
+    outline: thin dotted $blue-darker;
+  }
+
   a[aria-current="page"]:focus {
-    color: $blue-darkest;
     outline: thin dotted $blue-darker;
   }
 }
 
-.site-navigation {
+nav {
   .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
     color: $blue-medium;
-  }
+    padding: 0;
+    cursor: pointer;
 
-  button:focus {
-    // https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/
-    outline: thin dotted $blue-darker;
-    outline-offset: 3px;
+    &:focus {
+      outline: thin dotted $blue-darker;
+      outline-offset: 3px;
+    }
   }
 
   ul {
@@ -71,24 +80,14 @@ header {
     }
   }
 
-  .menu-trigger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    padding: 0;
-    cursor: pointer;
-  }
-
-  // TOGGLE MENU ////////////////////////////////
+  // MOBILE MENU ////////////////////////////////
   @media (max-width: 1100px) {
-    .menu-trigger {
+    .hamburger {
       display: flex;
       margin: 7px 20px 0 0;
     }
 
-    .menu-trigger.is-active + ul {
+    .is-active {
       display: block;
     }
 
