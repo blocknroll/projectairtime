@@ -4,77 +4,73 @@ import navStyles from "../styles/navStyles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
-const hamburger = <FontAwesomeIcon icon={faBars} />
-
-const MenuItems = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "#intro",
-    title: "Introduction",
-  },
-  {
-    path: "#video",
-    title: "Videos",
-  },
-  {
-    path: "#news",
-    title: "In the News",
-  },
-  {
-    path: "#sponsors",
-    title: "Sponsors",
-  },
-  {
-    path: "#about",
-    title: "About Us",
-  },
-  {
-    path: "#contact",
-    title: "Contact",
-  },
-]
-
-const ListLink = props => (
-  <li>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+const hamburgerIcon = <FontAwesomeIcon icon={faBars} />
 
 class Navigation extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { showMenu: false }
-
-    this.handleToggleClick = this.handleToggleClick.bind(this)
+    this.state = {
+      showMenu: false,
+    }
+    this.toggleMenu = this.toggleMenu.bind(this)
   }
 
-  handleToggleClick() {
+  toggleMenu() {
     this.setState(state => ({
       showMenu: !state.showMenu,
     }))
   }
 
   render() {
-    const listMenuItems = MenuItems.map((menuItem, index) => (
-      <ListLink key={index} to={menuItem.path}>
-        {menuItem.title}
-      </ListLink>
-    ))
     return (
-      <nav className={navStyles.siteNavigation}>
-        <button
-          onClick={this.handleToggleClick}
-          className={
-            `${navStyles.menuTrigger}` +
-            (this.state.showMenu ? ` ${navStyles.isActive}` : "")
-          }
-        >
-          <div className={navStyles.hamburger}>{hamburger}</div>
+      <nav>
+        <button className={navStyles.hamburger} onClick={this.toggleMenu}>
+          {hamburgerIcon}
         </button>
-        <ul>{listMenuItems}</ul>
+
+        <ul className={this.state.showMenu ? ` ${navStyles.isActive}` : ""}>
+          <li>
+            <Link to="/" onClick={this.toggleMenu}>
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#intro" onClick={this.toggleMenu}>
+              Introduction
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#video" onClick={this.toggleMenu}>
+              Videos
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#news" onClick={this.toggleMenu}>
+              In the News
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#sponsors" onClick={this.toggleMenu}>
+              Sponsors
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#about" onClick={this.toggleMenu}>
+              About Us
+            </Link>
+          </li>
+
+          <li>
+            <Link to="#contact" onClick={this.toggleMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
     )
   }
