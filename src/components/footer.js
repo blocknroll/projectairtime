@@ -13,7 +13,7 @@ const instagram = <FontAwesomeIcon icon={faInstagramSquare} />
 
 export default function Footer() {
   return (
-    <section className={footerStyles.section}>
+    <footer>
       <div className={footerStyles.container}>
         <div className={footerStyles.address}>
           <p>
@@ -71,6 +71,6 @@ export default function Footer() {
           <p>©2020 Project Airtime</p>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }

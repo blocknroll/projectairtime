@@ -19,11 +19,29 @@ dd {
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 54px; /* height of sticky header */
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh; // flex style. Avoid the IE 10-11 `min-height` bug
   width: 100vw;
+}
+
+// <div.layout>, the primary container, fills 100vh at a minimum, or bigger if needed
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// FLEXBOX: for sticky footer layout.
+// <main.content> can expand with 'flex-grow'...
+// if there's not enough content to fill the viewport.
+// By expanding, it pushes the footer to the bottom of the viewport
+.content {
+  display: flex;
+  flex: 1 0 auto; // flex-grow: 1, flex-shrink: 0, flex-basis: auto
+  flex-direction: column;
 }

@@ -7,12 +7,18 @@ import layoutStyles from "../styles/layoutStyles.module.scss"
 
 export default function Layout({ children }) {
   return (
+    // FLEXBOX: the <div.layout> fills 100vh, or bigger if needed
     <div className={layoutStyles.layout}>
       <Header>
         <Logo />
         <Nav />
       </Header>
-      {children}
+
+      {/* FLEXBOX: */}
+      {/* <main.content> can use flex-grow to fill the parent <div.layout> if needed */}
+      {/* the {children} also use flex-grow to fill the parent <main.content> if needed  */}
+      <main className={layoutStyles.content}>{children}</main>
+
       <Footer />
     </div>
   )

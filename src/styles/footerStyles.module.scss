@@ -1,8 +1,9 @@
 @import "colors";
 @import "typography";
 
-.section {
+footer {
   background-color: $blue-darkest;
+  width: 100%;
 
   .container {
     margin: 0 auto;
@@ -29,7 +30,11 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto 30px;
-    width: 300px;
+    max-width: 60vw;
+
+    @media screen and (min-width: 550px) {
+      width: 300px;
+    }
 
     a {
       color: $blue-darker;
@@ -41,7 +46,6 @@
     }
 
     a:focus {
-      // https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/
       color: white;
       outline: thin dotted white;
       outline-offset: 3px;
