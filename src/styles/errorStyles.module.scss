@@ -1,8 +1,10 @@
 @import "colors";
 @import "typography";
 
+// the child <section> can use 'flex-grow' to fill its parent <main.content> in the Layout component
 .section {
   background-color: $blue-darker;
+  flex: 1 0 auto; // flex-grow: 1, flex-shrink: 0, flex-basis: auto
 
   .container {
     display: flex;
