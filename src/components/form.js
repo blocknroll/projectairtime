@@ -1,9 +1,12 @@
 import React from "react"
 import formStyles from "../styles/formStyles.module.scss"
+import navStyles from "../styles/navStyles.module.scss"
 
 export default function Form() {
   return (
-    <section className={formStyles.section} id="contact">
+    <section className={formStyles.section}>
+      <div className={navStyles.anchor} id="contact"></div>
+
       <div className={formStyles.container}>
         <h2>Contact Us!</h2>
 

@@ -1,9 +1,12 @@
 import React from "react"
 import videoStyles from "../styles/videoStyles.module.scss"
+import navStyles from "../styles/navStyles.module.scss"
 
 export default function Video() {
   return (
-    <section className={videoStyles.section} id="video">
+    <section className={videoStyles.section}>
+      <div className={navStyles.anchor} id="video"></div>
+
       <div className={videoStyles.container}>
         <h2>Videos</h2>
 
