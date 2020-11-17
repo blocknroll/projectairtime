@@ -189,6 +189,10 @@ input[type="submit"] {
   text-transform: uppercase;
   transition: background-color 125ms ease-out;
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
 
   &:focus {
     box-shadow: 0 0 0 3px white, 0 0 0 6px $blue-darkest;
