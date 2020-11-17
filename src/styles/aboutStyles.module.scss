@@ -7,13 +7,21 @@
   .container {
     margin: 0 auto;
     max-width: 80vw;
-    padding: 03vh;
+    padding: 06vh 03vw;
   }
 
   h2 {
     color: $white;
     font-weight: 500;
-    margin: 20px 0 30px;
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: white;
+    font-weight: 500;
+    margin: 0 0 30px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -23,5 +31,18 @@
     font-weight: 400;
     line-height: 1.5;
     margin: 0 auto 30px;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $blue-darkest;
+    }
+
+    &:focus {
+      color: $blue-darkest;
+      outline: 1px dotted $blue-darkest;
+    }
   }
 }
