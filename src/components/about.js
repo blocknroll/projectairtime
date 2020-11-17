@@ -40,7 +40,8 @@ export default function About() {
 
         <p>
           If you would like to contact Chris, please do so using
-          projectairtime@gmail.com or 801-706-6076.
+          projectairtime@gmail.com or{" "}
+          <a href="tel:+18017066076">801-706-6076</a>.
         </p>
 
         <div className={videoStyles.responsiveContainer}>
@@ -63,6 +64,10 @@ export default function About() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
+                img:first-child:hover{
+                  outline: thin dotted white;
+                  outline-offset: 5px;
+                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
@@ -78,6 +83,7 @@ export default function About() {
             loading="lazy"
           ></iframe>
         </div>
+        <h3>My Overdrive by Chris Santacroce</h3>
 
         <div className={videoStyles.responsiveContainer}>
           <iframe
@@ -99,6 +105,10 @@ export default function About() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
+                img:first-child:hover{
+                  outline: thin dotted white;
+                  outline-offset: 5px;
+                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
@@ -114,6 +124,7 @@ export default function About() {
             loading="lazy"
           ></iframe>
         </div>
+        <h3>Chris Santacroce | The Line Tahoe</h3>
 
         <div className={videoStyles.responsiveContainer}>
           <iframe
@@ -135,6 +146,10 @@ export default function About() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
+                img:first-child:hover{
+                  outline: thin dotted white;
+                  outline-offset: 5px;
+                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
@@ -150,6 +165,7 @@ export default function About() {
             loading="lazy"
           ></iframe>
         </div>
+        <h3>The Finger: Paragliding Kite Trick</h3>
       </div>
     </section>
   )
