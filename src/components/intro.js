@@ -1,10 +1,13 @@
 import React from "react"
 import Container from "../components/container"
 import introStyles from "../styles/introStyles.module.scss"
+import navStyles from "../styles/navStyles.module.scss"
 
 export default function Intro() {
   return (
-    <section className={introStyles.section} id="intro">
+    <section className={introStyles.section}>
+      <div className={navStyles.anchor} id="intro"></div>
+
       <Container>
         <h2>What is Project Airtime?</h2>
         <p>

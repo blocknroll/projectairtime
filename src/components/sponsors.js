@@ -1,9 +1,12 @@
 import React from "react"
 import sponsorStyles from "../styles/sponsorStyles.module.scss"
+import navStyles from "../styles/navStyles.module.scss"
 
 export default function Sponsors() {
   return (
-    <section className={sponsorStyles.section} id="sponsors">
+    <section className={sponsorStyles.section}>
+      <div className={navStyles.anchor} id="sponsors"></div>
+
       <div className={sponsorStyles.container}>
         <h2>Sponsors + Supporters</h2>
 

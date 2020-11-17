@@ -39,6 +39,15 @@ header {
   }
 }
 
+.anchor {
+  &::before {
+    display: block;
+    content: "";
+    height: 54px;
+    margin: -54px 0 0;
+  }
+}
+
 nav {
   .hamburger {
     display: none;

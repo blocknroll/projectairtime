@@ -1,10 +1,13 @@
 import React from "react"
 import aboutStyles from "../styles/aboutStyles.module.scss"
 import videoStyles from "../styles/videoStyles.module.scss"
+import navStyles from "../styles/navStyles.module.scss"
 
 export default function About() {
   return (
-    <section className={aboutStyles.section} id="about">
+    <section className={aboutStyles.section}>
+      <div className={navStyles.anchor} id="about"></div>
+
       <div className={aboutStyles.container}>
         <h2>About Us</h2>
         <p>
