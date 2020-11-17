@@ -40,11 +40,6 @@
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   position: relative;
   width: 100%;
-
-  a:hover,
-  a:focus {
-    outline: thin dotted $blue-darker;
-  }
 }
 
 .responsiveIframe {
@@ -55,9 +50,4 @@
   right: 0;
   top: 0;
   width: 100%;
-
-  a:hover,
-  a:focus {
-    outline: thin dotted $blue-darker;
-  }
 }
