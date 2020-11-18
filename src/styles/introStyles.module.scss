@@ -6,15 +6,20 @@
 
   h2 {
     color: white;
-    font-weight: 200;
-    text-align: center;
-    text-transform: uppercase;
+    font-weight: 300;
   }
 
   p {
     color: white;
-    font-weight: 200;
-    line-height: 1.5;
-    margin: 0 auto 5vh;
+  }
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $blue-medium;
+      outline: 1px dotted white;
+    }
   }
 }
