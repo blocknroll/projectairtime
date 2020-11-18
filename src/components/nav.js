@@ -36,37 +36,37 @@ class Navigation extends React.Component {
           </li>
 
           <li>
-            <Link to="#intro" onClick={this.toggleMenu}>
+            <Link to="/#intro" onClick={this.toggleMenu}>
               Introduction
             </Link>
           </li>
 
           <li>
-            <Link to="#video" onClick={this.toggleMenu}>
+            <Link to="/#video" onClick={this.toggleMenu}>
               Videos
             </Link>
           </li>
 
           <li>
-            <Link to="#news" onClick={this.toggleMenu}>
+            <Link to="/#news" onClick={this.toggleMenu}>
               In the News
             </Link>
           </li>
 
           <li>
-            <Link to="#sponsors" onClick={this.toggleMenu}>
+            <Link to="/#sponsors" onClick={this.toggleMenu}>
               Sponsors
             </Link>
           </li>
 
           <li>
-            <Link to="#about" onClick={this.toggleMenu}>
+            <Link to="/#about" onClick={this.toggleMenu}>
               About Us
             </Link>
           </li>
 
           <li>
-            <Link to="#contact" onClick={this.toggleMenu}>
+            <Link to="/#contact" onClick={this.toggleMenu}>
               Contact
             </Link>
           </li>
