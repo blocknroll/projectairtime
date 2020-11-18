@@ -1,4 +1,5 @@
 import React from "react"
+import Container from "../components/container"
 import videoStyles from "../styles/videoStyles.module.scss"
 import navStyles from "../styles/navStyles.module.scss"
 
@@ -7,7 +8,7 @@ export default function Video() {
     <section className={videoStyles.section}>
       <div className={navStyles.anchor} id="video"></div>
 
-      <div className={videoStyles.container}>
+      <Container>
         <h2>Videos</h2>
 
         {/* Joe */}
@@ -31,13 +32,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/k2-cvuGmWvc?autoplay=1'>
@@ -73,13 +79,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/5jLUtWCr9fQ?autoplay=1'>
@@ -115,13 +126,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/CJFugtJlC_s?autoplay=1'>
@@ -157,13 +173,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/rX511v45TIU?autoplay=1'>
@@ -199,13 +220,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/3HqPbHUSeU4?autoplay=1'>
@@ -241,13 +267,18 @@ export default function Video() {
                   top:calc(50vh - 36px);
                   left:calc(50vw - 36px);
                 }
-                img:first-child:hover{
-                  outline: thin dotted white;
-                  outline-offset: 5px;
-                }
                 img:nth-child(2){
                   width:100%;
                   height:auto
+                }
+                a {
+                  display: inline-block;
+                }
+                a:focus,
+                a:hover {
+                  color: white;
+                  outline: 1px dotted white;
+                  outline-offset: -40px;
                 }
               </style>
               <a href='https://www.youtube-nocookie.com/embed/VzrlexXcEtM?autoplay=1'>
@@ -261,7 +292,7 @@ export default function Video() {
           ></iframe>
         </div>
         <h3 className={videoStyles.caption}>Larry</h3>
-      </div>
+      </Container>
     </section>
   )
 }
