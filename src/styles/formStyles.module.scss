@@ -4,17 +4,16 @@
 .section {
   background-color: $blue-medium;
 
-  .container {
-    margin: 0 auto;
-    padding: 06vh 03vw;
+  .grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   h2 {
     color: $white;
-    font-weight: 500;
-    margin: 0 0 30px;
-    text-align: center;
-    text-transform: uppercase;
+    margin: 0;
   }
 }
 
@@ -24,10 +23,9 @@ form {
   border: 1px solid $blue-darker;
   box-shadow: 0px 1px 1px $blue-darker;
   display: block;
-  margin: 0 auto;
-  max-width: 90vw;
   padding: 20px;
   transition: box-shadow 250ms ease-out, transform 250ms ease-out;
+  width: 100%;
 
   // Media Queries
   @media screen and (min-width: 576px) {
@@ -66,17 +64,17 @@ input[type="text"],
 input[type="number"],
 textarea {
   appearance: none;
-  box-sizing: border-box;
   border: 1px solid $blue-medium;
   border-radius: 0;
+  box-sizing: border-box;
   display: block;
   font: inherit;
   line-height: 1;
   margin: 0.5em 0 0.8em;
   outline: 0px;
   padding: 0.4em;
-  width: 100%;
   transition: border-color 125ms, outline 125ms;
+  width: 100%;
 
   &:hover {
     border-color: $blue-darkest;
@@ -90,65 +88,65 @@ textarea {
 
 // RADIO BUTTONS ////////////////////////////////
 fieldset {
-  position: relative;
   border: 1px solid white;
-  padding: 20px 20px 10px;
   margin: 2em 0 1.4em;
+  padding: 20px 20px 10px;
+  position: relative;
 
   &:focus-within {
     border: 1px solid $blue-darkest;
   }
 
   legend {
-    position: absolute;
-    top: 0;
-    font-size: 18px;
-    line-height: 1;
-    margin: -9px 0 0 -2px; /* half of font-size */
     background: $blue-medium;
     color: white;
-    padding: 0 10px;
+    font-size: 18px;
     letter-spacing: 0.025em;
+    line-height: 1;
+    margin: -9px 0 0 -2px; /* half of font-size */
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
   }
 
   label {
     margin-bottom: 14px;
-    position: relative; /* to contain absolute elements */
     padding-left: 30px; /* make space for custom radio button */
+    position: relative; /* to contain absolute elements */
   }
 
   /* hide default radio button  */
   label input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
     height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
   }
 
   /* custom radio button */
   label span {
-    position: absolute; /* position in the free space in <label> */
-    top: 1px;
-    left: 0;
-    width: 20px;
-    height: 20px;
     background-color: white;
     border-radius: 50%;
+    height: 20px;
+    left: 0;
+    position: absolute; /* position in the free space in <label> */
+    top: 1px;
     transition: background-color 250ms;
+    width: 20px;
   }
 
   /* 'selected' radio button */
   label span:after {
     content: "";
-    position: absolute;
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    width: 8px;
-    height: 8px;
     border-radius: 50%;
+    display: none;
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
   }
 
   label:hover {
@@ -179,20 +177,20 @@ textarea {
 
 // BUTTON ///////////////////////////////////////
 input[type="submit"] {
+  appearance: none;
   background-color: $blue-darker;
   border: 1px solid $blue-darkest;
   color: white;
   font-size: 1.1em;
   letter-spacing: 0.025em;
   margin: 0.7em auto 0.3em;
+  opacity: 1;
   padding: 1em;
   text-transform: uppercase;
   transition: background-color 125ms ease-out;
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  opacity: 1;
 
   &:focus {
     box-shadow: 0 0 0 3px white, 0 0 0 6px $blue-darkest;
@@ -207,8 +205,8 @@ input[type="submit"] {
   &:active {
     background-color: darken($blue-darker, 20%);
     position: relative;
-    top: 1px;
     text-decoration: none;
+    top: 1px;
     transition: none;
   }
 }
