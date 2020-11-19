@@ -39,6 +39,12 @@ header {
   }
 }
 
+// prevent the default {display: inline} of links.
+// prevents linked images from overflowing the container
+a {
+  display: inline-block;
+}
+
 .anchor {
   &::before {
     display: block;
