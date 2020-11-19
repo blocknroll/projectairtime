@@ -4,12 +4,20 @@
 .section {
   background-color: $blue-lighter;
 
+  .grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
   h2 {
     color: $blue-darkest;
+    margin: 0;
   }
 
   h3 {
     color: $blue-darker;
+    margin: 10px 0 0;
   }
 }
 
