@@ -1,29 +1,32 @@
 @import "colors";
 
 // breakpoints
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$mobile-xs: 320px;
+$desktop: 1200px;
 
 header {
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid $blue-medium;
   display: flex;
+  height: 56px;
   justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
   z-index: 99;
-  height: 56px;
 }
 
 .logo {
-  margin: 0 auto;
+  margin: -2px auto 0;
   max-width: 280px;
   padding-left: 14px;
+
+  @media (max-width: $mobile-xs) {
+    margin: -1px auto 0;
+    max-width: 240px;
+  }
 
   img {
     padding-right: 10px; // balance white space around logo
@@ -47,8 +50,8 @@ a {
 
 .anchor {
   &::before {
-    display: block;
     content: "";
+    display: block;
     height: 54px;
     margin: -54px 0 0;
   }
@@ -56,87 +59,84 @@ a {
 
 nav {
   .hamburger {
-    display: none;
-    font-size: 24px;
     background: none;
     border: none;
     color: $blue-medium;
-    padding: 0;
     cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    margin: 0 20px 0 0;
+    padding: 0;
 
     &:focus {
       outline: thin dotted $blue-darker;
       outline-offset: 3px;
     }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  .is-active {
+    display: block;
   }
 
   ul {
+    background-color: white;
+    display: none; // defaults to none, then displayed with '.is-active' toggle
     list-style: none;
-    margin: 0 30px 0 0;
+    margin: 0;
+    max-width: 100%;
     padding: 0;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+
+    @media (min-width: $desktop) {
+      display: block; // defaults to display on desktop
+      margin: 0 30px 0 0;
+      position: static;
+    }
 
     li {
-      display: inline-block;
-      margin-left: 20px;
+      border-bottom: 1px solid $blue-medium;
+      display: block;
+      margin-left: 0;
+
+      @media (min-width: $desktop) {
+        border-bottom: none;
+        display: inline-block;
+        margin-left: 20px;
+      }
     }
   }
 
   a {
     color: $blue-darker;
+    display: block;
     font-weight: 500;
+    padding: 20px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
+    @media (min-width: $desktop) {
+      padding: 0;
+    }
+
     &:hover,
     &:focus {
+      background-color: $blue-lighter;
       color: $blue-darkest;
-      outline: thin dotted $blue-darker;
-      outline-offset: 3px;
-    }
-  }
+      outline: none;
 
-  // MOBILE MENU ////////////////////////////////
-  @media (max-width: 1100px) {
-    .hamburger {
-      display: flex;
-      margin: 7px 20px 0 0;
-    }
-
-    .is-active {
-      display: block;
-    }
-
-    ul {
-      border-left: 1px solid $blue-medium;
-      border-bottom: 1px solid $blue-medium;
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 56px;
-      z-index: 1;
-      width: 100%;
-      max-width: 200px;
-      overflow: hidden;
-      background-color: white;
-      margin: 0;
-
-      li {
-        display: block;
-        margin-left: 0;
-      }
-    }
-
-    a {
-      color: $blue-darker;
-      display: block;
-      padding: 20px;
-
-      &:hover,
-      &:focus {
-        background-color: $blue-lighter;
-        color: $blue-darkest;
-        text-decoration: none;
-        outline: none;
+      @media (min-width: $desktop) {
+        background-color: white;
+        outline: thin dotted $blue-darker;
+        outline-offset: 3px;
       }
     }
   }
