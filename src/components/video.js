@@ -13,7 +13,7 @@ export default function Video() {
           <h2>Videos</h2>
 
           {/* example */}
-          {/* <iframe
+          <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
@@ -22,7 +22,79 @@ export default function Video() {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
-          ></iframe> */}
+          ></iframe>
+
+          {/* Joe */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k2-cvuGmWvc"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/k2-cvuGmWvc?start=2?autoplay=1><img src=https://img.youtube.com/vi/k2-cvuGmWvc/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
+
+          {/* Lucas */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5jLUtWCr9fQ"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/5jLUtWCr9fQ?autoplay=1><img src=https://img.youtube.com/vi/5jLUtWCr9fQ/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
+
+          {/* Jason */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CJFugtJlC_s"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CJFugtJlC_s?autoplay=1><img src=https://img.youtube.com/vi/CJFugtJlC_s/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
+
+          {/* Serei */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rX511v45TIU"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/rX511v45TIU?autoplay=1><img src=https://img.youtube.com/vi/rX511v45TIU/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
+
+          {/* Donna */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3HqPbHUSeU4"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3HqPbHUSeU4?autoplay=1><img src=https://img.youtube.com/vi/3HqPbHUSeU4/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
+
+          {/* Larry */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VzrlexXcEtM"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/VzrlexXcEtM?autoplay=1><img src=https://img.youtube.com/vi/VzrlexXcEtM/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+          ></iframe>
 
           {/* example: formatted */}
           {/* <iframe
@@ -64,7 +136,7 @@ export default function Video() {
           ></iframe> */}
 
           {/* example vid - in my style */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
@@ -108,10 +180,10 @@ export default function Video() {
               // loading="lazy"
             ></iframe>
             <h3>The Dark Knight Rises</h3>
-          </div>
+          </div> */}
 
           {/* Joe */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Joe Stone"
@@ -155,10 +227,10 @@ export default function Video() {
               // loading="lazy"
             ></iframe>
             <h3>Joe Stone</h3>
-          </div>
+          </div> */}
 
           {/* Lucas */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Lucas"
@@ -202,10 +274,10 @@ export default function Video() {
               // loading="lazy"
             ></iframe>
             <h3>Lucas</h3>
-          </div>
+          </div> */}
 
           {/* Jason */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Jason"
@@ -249,10 +321,10 @@ export default function Video() {
               loading="lazy"
             ></iframe>
             <h3>Jason</h3>
-          </div>
+          </div> */}
 
           {/* Serei */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Serei"
@@ -296,10 +368,10 @@ export default function Video() {
               loading="lazy"
             ></iframe>
             <h3>Serei</h3>
-          </div>
+          </div> */}
 
           {/* Donna */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Donna"
@@ -343,10 +415,10 @@ export default function Video() {
               loading="lazy"
             ></iframe>
             <h3>Donna</h3>
-          </div>
+          </div> */}
 
           {/* Larry */}
-          <div className={videoStyles.responsiveContainer}>
+          {/* <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Larry"
@@ -390,7 +462,7 @@ export default function Video() {
               loading="lazy"
             ></iframe>
             <h3>Larry</h3>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
