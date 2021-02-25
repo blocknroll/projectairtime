@@ -24,72 +24,36 @@ export default function Video() {
             title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
           ></iframe>
 
-          {/* Joe */}
+          {/* WSL */}
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/k2-cvuGmWvc"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/k2-cvuGmWvc?start=2?autoplay=1><img src=https://img.youtube.com/vi/k2-cvuGmWvc/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            src="https://www.youtube.com/embed/osUBLiazg28"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/osUBLiazg28?start=2?autoplay=1><img src=https://img.youtube.com/vi/osUBLiazg28/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
           ></iframe>
 
-          {/* Lucas */}
+          {/* greenhouse */}
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/5jLUtWCr9fQ"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/5jLUtWCr9fQ?autoplay=1><img src=https://img.youtube.com/vi/5jLUtWCr9fQ/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            src="https://www.youtube.com/embed/9jbLZxwWudk"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/9jbLZxwWudk?autoplay=1><img src=https://img.youtube.com/vi/9jbLZxwWudk/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
           ></iframe>
 
-          {/* Jason */}
+          {/* nasa */}
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/CJFugtJlC_s"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CJFugtJlC_s?autoplay=1><img src=https://img.youtube.com/vi/CJFugtJlC_s/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
-          ></iframe>
-
-          {/* Serei */}
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/rX511v45TIU"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/rX511v45TIU?autoplay=1><img src=https://img.youtube.com/vi/rX511v45TIU/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
-          ></iframe>
-
-          {/* Donna */}
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/3HqPbHUSeU4"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3HqPbHUSeU4?autoplay=1><img src=https://img.youtube.com/vi/3HqPbHUSeU4/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
-          ></iframe>
-
-          {/* Larry */}
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/VzrlexXcEtM"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/VzrlexXcEtM?autoplay=1><img src=https://img.youtube.com/vi/VzrlexXcEtM/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+            src="https://www.youtube.com/embed/4czjS9h4Fpg"
+            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/4czjS9h4Fpg?autoplay=1><img src=https://img.youtube.com/vi/4czjS9h4Fpg/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
