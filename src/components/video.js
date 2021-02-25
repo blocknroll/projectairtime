@@ -67,8 +67,8 @@ export default function Video() {
           <div className={videoStyles.responsiveContainer}>
             <iframe
               className={videoStyles.responsiveIframe}
-              title="The Dark Knight Rises: What Went Wrong? – Wisecrack Editio"
-              type="text/html"
+              title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"
+              // type="text/html"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
@@ -103,11 +103,11 @@ export default function Video() {
                   <img src='https://img.youtube.com/vi/Y8Wp3dafaMQ/maxresdefault.jpg' alt='Thumbnail'>
                 </a>"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               // loading="lazy"
             ></iframe>
-            <h3>Joe Stone</h3>
+            <h3>The Dark Knight Rises</h3>
           </div>
 
           {/* Joe */}
@@ -115,7 +115,7 @@ export default function Video() {
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Joe Stone"
-              type="text/html"
+              // type="text/html"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/k2-cvuGmWvc"
@@ -150,7 +150,7 @@ export default function Video() {
                   <img src='https://i.ytimg.com/vi/k2-cvuGmWvc/maxresdefault.jpg' alt='Thumbnail'>
                 </a>"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               // loading="lazy"
             ></iframe>
@@ -162,7 +162,7 @@ export default function Video() {
             <iframe
               className={videoStyles.responsiveIframe}
               title="Project Airtime | Lucas"
-              type="text/html"
+              // type="text/html"
               width="560"
               height="315"
               src="https://www.youtube-nocookie.com/embed/5jLUtWCr9fQ"
@@ -197,7 +197,7 @@ export default function Video() {
                   <img src='https://i.ytimg.com/vi/5jLUtWCr9fQ/maxresdefault.jpg' alt='Thumbnail'>
                 </a>"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               // loading="lazy"
             ></iframe>
