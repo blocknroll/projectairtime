@@ -37,4 +37,23 @@
   right: 0;
   top: 0;
   width: 100%;
+
+  img:first-child {
+    position: absolute;
+    top: calc(50vh - 36px);
+    left: calc(50vw - 36px);
+  }
+  img:nth-child(2) {
+    width: 100%;
+    height: auto;
+  }
+  a {
+    display: inline-block;
+  }
+  a:focus,
+  a:hover {
+    color: white;
+    outline: 1px dotted white;
+    outline-offset: -40px;
+  }
 }
