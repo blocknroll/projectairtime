@@ -28,6 +28,20 @@ export default function Success({ data }) {
 
             <div className={videoStyles.responsiveContainer}>
               <iframe
+                className={videoStyles.responsiveIframe}
+                id="ytplayer"
+                type="text/html"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5jLUtWCr9fQ?playsinline=1"
+                frameborder="0"
+                allowfullscreen="1"
+              ></iframe>
+              <h3 className={videoStyles.caption}>Lucas</h3>
+            </div>
+
+            <div className={videoStyles.responsiveContainer}>
+              <iframe
                 title="Project Airtime | Lucas"
                 className={videoStyles.responsiveIframe}
                 width="560"
