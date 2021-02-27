@@ -35,7 +35,7 @@ export default function Success({ data }) {
                 height="315"
                 src="https://www.youtube.com/embed/5jLUtWCr9fQ?controls=1&playsinline=1"
                 frameborder="0"
-                allowfullscreen="1"
+                allow="fullscreen"
               ></iframe>
               <h3 className={videoStyles.caption}>Lucas</h3>
             </div>
