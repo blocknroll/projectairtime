@@ -33,7 +33,7 @@ export default function Success({ data }) {
                 type="text/html"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/5jLUtWCr9fQ?playsinline=1"
+                src="https://www.youtube.com/embed/5jLUtWCr9fQ?controls=1&playsinline=1"
                 frameborder="0"
                 allowfullscreen="1"
               ></iframe>
