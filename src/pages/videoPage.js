@@ -31,10 +31,9 @@ export default function Success({ data }) {
                 className={videoStyles.responsiveIframe}
                 id="ytplayer"
                 type="text/html"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5jLUtWCr9fQ?controls=1&playsinline=1"
-                frameborder="0"
+                // width="560"
+                // height="315"
+                src="https://www.youtube.com/embed/5jLUtWCr9fQ"
                 allow="fullscreen"
               ></iframe>
               <h3 className={videoStyles.caption}>Lucas</h3>
