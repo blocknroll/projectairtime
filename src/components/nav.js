@@ -42,7 +42,7 @@ class Navigation extends React.Component {
           </li>
 
           <li>
-            <Link to="/#video" onClick={this.toggleMenu}>
+            <Link to="/videoPage" onClick={this.toggleMenu}>
               Videos
             </Link>
           </li>
