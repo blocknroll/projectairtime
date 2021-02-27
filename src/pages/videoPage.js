@@ -32,10 +32,10 @@ export default function Success({ data }) {
                 className={videoStyles.responsiveIframe}
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/5jLUtWCr9fQ?autoplay=1&playsinline=1"
+                src="https://www.youtube.com/embed/5jLUtWCr9fQ?playsinline=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowfullscreen="0"
                 type="text/html"
               ></iframe>
               <h3 className={videoStyles.caption}>Lucas</h3>
