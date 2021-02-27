@@ -35,7 +35,7 @@ export default function Success({ data }) {
                 src="https://www.youtube.com/embed/5jLUtWCr9fQ?playsinline=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen="0"
+                allowfullscreen="1"
                 type="text/html"
               ></iframe>
               <h3 className={videoStyles.caption}>Lucas</h3>
