@@ -33,6 +33,23 @@ export default function Success({ data }) {
                 type="text/html"
                 width="560"
                 height="315"
+                src="https://www.youtube.com/embed/5jLUtWCr9fQ"
+                allowFullScreen="allowFullScreen"
+                webkitAllowFullScreen="webkitAllowFullScreen"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                // allow="fullscreen"
+              ></iframe>
+              <h3 className={videoStyles.caption}>Lucas</h3>
+            </div>
+
+            {/* <div className={videoStyles.responsiveContainer}>
+              <iframe
+                className={videoStyles.responsiveIframe}
+                id="ytplayer"
+                type="text/html"
+                width="560"
+                height="315"
                 src="https://www.youtube.com/embed/5jLUtWCr9fQ?playsinline=1"
                 allowFullScreen="allowFullScreen"
                 frameBorder="0"
@@ -40,7 +57,7 @@ export default function Success({ data }) {
                 // allow="fullscreen"
               ></iframe>
               <h3 className={videoStyles.caption}>Lucas</h3>
-            </div>
+            </div> */}
 
             <div className={videoStyles.responsiveContainer}>
               <iframe
