@@ -26,6 +26,16 @@ export default function Success({ data }) {
               <h3 className={videoStyles.caption}>Joe Stone</h3>
             </div>
 
+            <iframe
+              src="https://www.youtube.com/embed/5jLUtWCr9fQ"
+              title="Project Airtime | Lucas"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+            />
+
             <div className={videoStyles.responsiveContainer}>
               <iframe
                 className={videoStyles.responsiveIframe}
