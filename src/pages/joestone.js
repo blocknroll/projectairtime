@@ -10,7 +10,20 @@ export default function Success({ data }) {
       <section className={videoStyles.section}>
         <Container>
           <div className={videoStyles.grid}>
-            <div className={videoStyles.responsiveContainer}>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/k2-cvuGmWvc?autoplay=1"
+              title="Project Airtime | Joe Stone"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+              width="560"
+              height="315"
+            />
+            <h3 className={videoStyles.caption}>Joe Stone</h3>
+
+            {/* <div className={videoStyles.responsiveContainer}>
               <iframe
                 className={videoStyles.responsiveIframe}
                 src="https://www.youtube-nocookie.com/embed/k2-cvuGmWvc"
@@ -24,7 +37,7 @@ export default function Success({ data }) {
                 height="315"
               />
               <h3 className={videoStyles.caption}>Joe Stone</h3>
-            </div>
+            </div> */}
 
             <div className={videoStyles.container}>
               <p>
