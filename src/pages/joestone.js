@@ -11,7 +11,7 @@ export default function Success({ data }) {
         <Container>
           <div className={videoStyles.grid}>
             <iframe
-              src="https://www.youtube-nocookie.com/embed/k2-cvuGmWvc?autoplay=1"
+              src="https://www.youtube-nocookie.com/embed/k2-cvuGmWvc?autoplay=1&mute=1"
               title="Project Airtime | Joe Stone"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               frameBorder="0"
