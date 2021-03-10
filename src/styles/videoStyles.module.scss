@@ -8,6 +8,7 @@
     display: grid;
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   h2 {
@@ -22,6 +23,14 @@
 }
 
 .responsiveContainer {
+  // margin: 0 0 5px;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: relative;
+  width: 100%;
+}
+
+.video {
   margin: 0 0 5px;
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
@@ -56,4 +65,80 @@
     outline: 1px dotted white;
     outline-offset: -40px;
   }
+}
+
+.imgCropFrame {
+  overflow: hidden;
+
+  img {
+    margin: -9.375% 0;
+    display: block;
+    width: 100%;
+    // height: auto;
+  }
+  img:first-child {
+    // position: absolute;
+    // top: calc(50vh - 36px);
+    // left: calc(50vw - 36px);
+    // width: 42px;
+  }
+}
+
+// .iconBox {
+//   position: absolute !important;
+//   top: 50% !important;
+//   left: 50% !important;
+//   width: 48px !important;
+//   height: 48px !important;
+//   margin: -24px 0 0 -24px !important;
+
+//   img {
+//     width: 100% !important;
+//     height: 100% !important;
+//     margin: -9.5% 0px -12%;
+//   }
+// }
+
+////////////////////////////////////////////////////////
+.ytImgContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ytImgContainer {
+  margin: 0 auto;
+  max-width: 604px;
+  width: 100%;
+}
+
+.ytImgContainer:after {
+  clear: both;
+}
+
+.ytImgContainer:before,
+.ytImgContainer:after {
+  content: "";
+  display: table;
+}
+
+div.ytImgThumbBox {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+div.ytImgThumbPlay {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  margin: -24px 0 0 -24px !important;
+}
+
+img.ytImgThumbImg {
+  width: 100% !important;
+  height: 100% !important;
+  margin: -9.5% 0px -12%;
 }
