@@ -8,7 +8,7 @@ const Video = ({ videoSrcURL, videoTitle, videoCaption }) => (
     <iframe
       src={videoSrcURL}
       title={videoTitle}
-      class={videoStyles.responsiveIframe}
+      className={videoStyles.responsiveIframe}
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameBorder="0"
       webkitallowfullscreen="true"

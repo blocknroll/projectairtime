@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Video from "../components/video"
 import videoStyles from "../styles/videoStyles.module.scss"
 
-export default function Fred2({ data }) {
+export default function Test1({ data }) {
   return (
     <Layout>
       <section className={videoStyles.section}>
