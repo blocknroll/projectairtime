@@ -2,9 +2,10 @@ import React from "react"
 import Container from "../components/container"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import Video from "../components/video"
 import videoStyles from "../styles/videoStyles.module.scss"
 
-export default function Success({ data }) {
+export default function Joe({ data }) {
   return (
     <Layout>
       <section className={videoStyles.section}>

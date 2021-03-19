@@ -3,20 +3,24 @@ import React from "react"
 import { Link } from "gatsby"
 // import Layout from "../components/layout"
 import videoStyles from "../styles/videoStyles.module.scss"
+
 const Video = ({ videoSrcURL, videoTitle, videoCaption }) => (
-  <div className={videoStyles.video}>
-    <iframe
-      src={videoSrcURL}
-      title={videoTitle}
-      className={videoStyles.responsiveIframe}
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameBorder="0"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-      width="560"
-      height="315"
-    />
+  <div>
+    <div className={videoStyles.responsiveContainer}>
+      <iframe
+        src={videoSrcURL}
+        title={videoTitle}
+        className={videoStyles.responsiveIframe}
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        frameBorder="0"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        allowFullScreen
+        width="560"
+        height="315"
+      />
+    </div>
+
     <h3 className={videoStyles.caption}>{videoCaption}</h3>
 
     <div className={videoStyles.container}>
@@ -24,6 +28,7 @@ const Video = ({ videoSrcURL, videoTitle, videoCaption }) => (
         back to the <Link to="/#videos">video section...</Link>
       </p>
     </div>
+
   </div>
 )
 

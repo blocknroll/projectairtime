@@ -10,13 +10,13 @@ export default function Fred({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-          <div className={videoStyles.grid}>
+          {/* <div className={videoStyles.grid}> */}
             <Video
               videoSrcURL="https://www.youtube.com/embed/tsWAJCETtOg"
               videoTitle="First Top Launch"
               videoCaption="Fred"
             />
-          </div>
+          {/* </div> */}
         </Container>
       </section>
     </Layout>
