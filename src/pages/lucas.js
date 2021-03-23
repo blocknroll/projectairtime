@@ -9,11 +9,12 @@ export default function Lucas({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-            <Youtube
-              videoSrcURL="https://www.youtube-nocookie.com/embed/5jLUtWCr9fQ?autoplay=1"
-              videoTitle="Project Airtime | Lucas"
-              videoCaption="Lucas"
-            />
+          <Youtube
+            videoSrcURL="https://www.youtube-nocookie.com/embed/5jLUtWCr9fQ?autoplay=1"
+            videoTitle="Project Airtime | Lucas"
+            videoCaption="Lucas"
+            returnLink="videos"
+          />
         </Container>
       </section>
     </Layout>
