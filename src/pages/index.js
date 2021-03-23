@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
-import Video from "../components/video"
+import Videos from "../components/videos"
 import News from "../components/news"
 import Sponsors from "../components/sponsors"
 import About from "../components/about"
@@ -17,7 +17,7 @@ export default function Home({ data }) {
         alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
       />
       <Intro />
-      <Video />
+      <Videos />
       <News />
       <Sponsors />
       <About />
