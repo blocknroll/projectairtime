@@ -1,8 +1,7 @@
 import React from "react"
-import Container from "../components/container"
-// import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Video from "../components/video"
+import Container from "../components/container"
+import Youtube from "../components/youtube"
 import videoStyles from "../styles/videoStyles.module.scss"
 
 export default function Fred({ data }) {
@@ -10,13 +9,11 @@ export default function Fred({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-          {/* <div className={videoStyles.grid}> */}
-            <Video
-              videoSrcURL="https://www.youtube.com/embed/tsWAJCETtOg"
+            <Youtube
+              videoSrcURL="https://www.youtube-nocookie.com/embed/tsWAJCETtOg?autoplay=1"
               videoTitle="First Top Launch"
               videoCaption="Fred"
             />
-          {/* </div> */}
         </Container>
       </section>
     </Layout>
