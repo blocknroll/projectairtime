@@ -9,11 +9,12 @@ export default function Jason({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-            <Youtube
-              videoSrcURL="https://www.youtube-nocookie.com/embed/CJFugtJlC_s?autoplay=1"
-              videoTitle="Project Airtime | Jason"
-              videoCaption="Jason"
-            />
+          <Youtube
+            videoSrcURL="https://www.youtube-nocookie.com/embed/CJFugtJlC_s?autoplay=1"
+            videoTitle="Project Airtime | Jason"
+            videoCaption="Jason"
+            returnLink="videos"
+          />
         </Container>
       </section>
     </Layout>
