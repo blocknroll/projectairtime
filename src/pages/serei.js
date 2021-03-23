@@ -9,11 +9,12 @@ export default function Serei({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-            <Youtube
-              videoSrcURL="https://www.youtube-nocookie.com/embed/rX511v45TIU?autoplay=1"
-              videoTitle="Project Airtime | Serei"
-              videoCaption="Serei"
-            />
+          <Youtube
+            videoSrcURL="https://www.youtube-nocookie.com/embed/rX511v45TIU?autoplay=1"
+            videoTitle="Project Airtime | Serei"
+            videoCaption="Serei"
+            returnLink="videos"
+          />
         </Container>
       </section>
     </Layout>
