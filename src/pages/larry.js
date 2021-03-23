@@ -9,11 +9,12 @@ export default function Larry({ data }) {
     <Layout>
       <section className={videoStyles.section}>
         <Container>
-            <Youtube
-              videoSrcURL="https://www.youtube-nocookie.com/embed/VzrlexXcEtM?autoplay=1"
-              videoTitle="Project Airtime | Larry"
-              videoCaption="Larry"
-            />
+          <Youtube
+            videoSrcURL="https://www.youtube-nocookie.com/embed/VzrlexXcEtM?autoplay=1"
+            videoTitle="Project Airtime | Larry"
+            videoCaption="Larry"
+            returnLink="videos"
+          />
         </Container>
       </section>
     </Layout>
