@@ -12,6 +12,7 @@
     display: grid;
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   h2 {
@@ -51,8 +52,8 @@
     display: inline-block;
   }
 
-  a:focus,
-  a:hover {
+  &:hover,
+  &:focus {
     color: white;
     outline: 1px dotted white;
     outline-offset: -40px;
