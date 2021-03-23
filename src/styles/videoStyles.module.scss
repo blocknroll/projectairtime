@@ -50,13 +50,13 @@
 
   a {
     display: inline-block;
-  }
 
-  &:hover,
-  &:focus {
-    color: white;
-    outline: 1px dotted white;
-    outline-offset: -40px;
+    &:focus,
+    &:hover {
+      color: white;
+      outline: 1px dotted white;
+      outline-offset: -40px;
+    }
   }
 
   .playButton {
