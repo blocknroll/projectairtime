@@ -3,11 +3,16 @@
 
 .section {
   background-color: $blue-lighter;
+  // flex allows the .section to fill the viewport on mobile
+  display: flex; // allows the .section to fill the parent -> main.content
+  flex: 1 0 auto; // flex-grow: 1, flex-shrink: 0, flex-basis: auto
+  flex-direction: column;
 
   .grid {
     display: grid;
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   h2 {
@@ -17,24 +22,71 @@
 
   h3 {
     color: $blue-darker;
-    margin: 10px 0 0;
+    margin: 0;
+  }
+
+  p {
+    color: $blue-darker;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+
+  a {
+    color: $blue-darker;
+
+    &:hover,
+    &:focus {
+      color: $blue-darkest;
+      outline: 1px dotted $blue-darkest;
+    }
   }
 }
 
-.responsiveContainer {
+/////////////////////////////////////////////////////////
+.youtubeThumbnailContainer {
+  margin: 0 0 5px;
+  overflow: hidden;
+  position: relative; // allow .playButton to be positioned relative to this
+
+  a {
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+    outline: 1px dotted white;
+    outline-offset: -40px;
+  }
+
+  .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .youtubeThumbnail {
+    display: block;
+    margin: -9.5% 0px -10.5%;
+    width: 100%;
+  }
+}
+
+/////////////////////////////////////////////////////////
+.youtubeIframeContainer {
   margin: 0 0 5px;
   overflow: hidden;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   position: relative;
   width: 100%;
-}
 
-.responsiveIframe {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
