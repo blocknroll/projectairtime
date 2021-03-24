@@ -8,6 +8,7 @@
     display: grid;
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   h2 {
@@ -25,14 +26,14 @@
     font-weight: 300;
     margin: 0;
   }
+}
 
-  a {
-    color: white;
+a {
+  color: white;
 
-    &:hover,
-    &:focus {
-      color: $blue-darkest;
-      outline: 1px dotted $blue-darkest;
-    }
+  &:hover,
+  &:focus {
+    color: $blue-darkest;
+    outline: 1px dotted $blue-darkest;
   }
 }
