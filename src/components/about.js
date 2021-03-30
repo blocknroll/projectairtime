@@ -63,6 +63,7 @@ export default function About() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/8fOLPpmteTg/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -82,6 +83,7 @@ export default function About() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/RjDtVkBHRHw/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -101,6 +103,7 @@ export default function About() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/1S2InrR1pkQ/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
