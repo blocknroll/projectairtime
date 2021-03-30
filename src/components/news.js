@@ -23,7 +23,14 @@ export default function News() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={kutvLogo} className={newsStyles.logo} alt="KUTV logo" />
+              <img
+                src={kutvLogo}
+                className={newsStyles.logo}
+                alt="KUTV logo"
+                height="31"
+                width="220"
+                loading="lazy"
+              />
             </a>
           </div>
 
@@ -37,6 +44,9 @@ export default function News() {
                 src={geneticAllianceLogo}
                 className={newsStyles.logo}
                 alt="Genetic Alliance logo"
+                height="96"
+                width="220"
+                loading="lazy"
               />
             </a>
           </div>
@@ -51,6 +61,9 @@ export default function News() {
                 src={pioneerPressLogo}
                 className={newsStyles.logo}
                 alt="Pioneer Press logo"
+                height="35"
+                width="220"
+                loading="lazy"
               />
             </a>
           </div>
@@ -65,6 +78,9 @@ export default function News() {
                 src={issaquahReporterLogo}
                 className={newsStyles.logo}
                 alt="Issaquah Reporter logo"
+                height="61"
+                width="220"
+                loading="lazy"
               />
             </a>
           </div>
@@ -79,6 +95,9 @@ export default function News() {
                 src={mailOnlineLogo}
                 className={newsStyles.logo}
                 alt="Mail Online logo"
+                height="41"
+                width="220"
+                loading="lazy"
               />
             </a>
           </div>
