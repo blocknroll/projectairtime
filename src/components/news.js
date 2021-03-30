@@ -5,7 +5,7 @@ import navStyles from "../styles/navStyles.module.scss"
 import geneticAllianceLogo from "../images/news/genetic_alliance_logo.png"
 import issaquahReporterLogo from "../images/news/issaquah_reporter_logo.png"
 import kutvLogo from "../images/news/kutv_logo.png"
-import mailOnlineLogo from "../images/news/mail_online_logo.gif"
+import mailOnlineLogo from "../images/news/mail_online_logo.png"
 import pioneerPressLogo from "../images/news/pioneer_press_logo.png"
 
 export default function News() {
