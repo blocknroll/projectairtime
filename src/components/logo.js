@@ -7,7 +7,13 @@ export default function Logo() {
   return (
     <div className={navStyles.logo}>
       <Link to="/">
-        <img src={logo} className={navStyles.logo} alt="Project Airtime logo" />
+        <img
+          src={logo}
+          className={navStyles.logo}
+          alt="Project Airtime logo"
+          height="37"
+          width="280"
+        />
       </Link>
     </div>
   )
