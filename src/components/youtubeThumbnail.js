@@ -16,6 +16,8 @@ const YoutubeThumbnail = ({ link, videoId, caption }) => (
           src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
           alt="Thumbnail"
           loading="lazy"
+          height="360"
+          width="480"
         />
       </Link>
     </div>
