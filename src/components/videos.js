@@ -26,6 +26,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/k2-cvuGmWvc/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -45,6 +46,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/5jLUtWCr9fQ/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -64,6 +66,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/CJFugtJlC_s/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -83,6 +86,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/rX511v45TIU/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -102,6 +106,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/3HqPbHUSeU4/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -121,6 +126,7 @@ export default function Videos() {
                   className={videoStyles.youtubeThumbnail}
                   src="https://i.ytimg.com/vi/VzrlexXcEtM/hqdefault.jpg"
                   alt="Thumbnail"
+                  loading="lazy"
                 />
               </Link>
             </div>
