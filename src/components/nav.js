@@ -24,7 +24,11 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav>
-        <button className={navStyles.hamburger} onClick={this.toggleMenu}>
+        <button
+          className={navStyles.hamburger}
+          onClick={this.toggleMenu}
+          aria-label="Navigation Menu"
+        >
           {hamburgerIcon}
         </button>
 
