@@ -20,11 +20,9 @@ header {
 
 .logo {
   margin: 2px auto 0;
-  padding-left: 36px;
+  padding-left: 40px;
 
   @media (max-width: $mobile-xs) {
-    height: auto;
-    width: 240px;
     padding-left: 20px;
   }
 
