@@ -1,7 +1,7 @@
 @import "colors";
 
 // breakpoints
-$mobile-xs: 320px;
+$mobile-xs: 380px;
 $desktop: 1200px;
 
 header {
@@ -9,7 +9,7 @@ header {
   background-color: white;
   border-bottom: 1px solid $blue-medium;
   display: flex;
-  height: 56px;
+  height: 52px;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -20,16 +20,14 @@ header {
 
 .logo {
   margin: 2px auto 0;
-  max-width: 280px;
-  padding-left: 14px;
+  padding-left: 40px;
 
   @media (max-width: $mobile-xs) {
-    margin: -1px auto 0;
-    max-width: 240px;
+    padding-left: 20px;
   }
 
   img {
-    padding-right: 10px; // balance white space around logo
+    padding: 0;
   }
 
   a:hover,
@@ -90,7 +88,7 @@ nav {
     max-width: 100%;
     padding: 0;
     position: absolute;
-    top: 56px;
+    top: 52px;
     right: 0;
     width: 100%;
     z-index: 1;
