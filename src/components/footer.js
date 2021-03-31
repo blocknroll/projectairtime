@@ -31,6 +31,7 @@ export default function Footer() {
               href="https://www.facebook.com/projectairtime"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook link"
             >
               {facebook}
             </a>
@@ -41,6 +42,7 @@ export default function Footer() {
               href="https://www.youtube.com/channel/UCh1j05Iv2ITUV-7ve4UfrpA"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Youtube link"
             >
               {youtube}
             </a>
@@ -51,6 +53,7 @@ export default function Footer() {
               href="https://twitter.com/projectairtime"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Twitter link"
             >
               {twitter}
             </a>
@@ -58,9 +61,10 @@ export default function Footer() {
 
           <div>
             <a
-              href="https://twitter.com/projectairtime"
+              href="https://www.instagram.com/projectairtime/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram link"
             >
               {instagram}
             </a>
@@ -68,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className={footerStyles.copyright}>
-          <p>©2020 Project Airtime</p>
+          <p>©2021 Project Airtime</p>
         </div>
       </div>
     </footer>

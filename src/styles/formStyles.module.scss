@@ -2,7 +2,7 @@
 @import "typography";
 
 .section {
-  background-color: $blue-medium;
+  background-color: $blue-lighter;
 
   .grid {
     display: grid;
@@ -12,14 +12,14 @@
   }
 
   h2 {
-    color: $white;
+    color: $blue-darkest;
     margin: 0;
   }
 }
 
 // FORM /////////////////////////////////////////
 form {
-  background-color: $blue-medium;
+  background-color: $blue-lighter;
   border: 1px solid $blue-darker;
   box-shadow: 0px 1px 1px $blue-darker;
   display: block;
@@ -47,7 +47,7 @@ form:focus-within {
 
 // LABELS ///////////////////////////////////////
 label {
-  color: white;
+  color: $blue-darkest;
   cursor: pointer;
   display: block;
   font-size: 1.1em;
@@ -93,13 +93,17 @@ fieldset {
   padding: 20px 20px 10px;
   position: relative;
 
+  &:hover {
+    border: 1px solid $blue-darker;
+  }
+
   &:focus-within {
     border: 1px solid $blue-darkest;
   }
 
   legend {
-    background: $blue-medium;
-    color: white;
+    background: $blue-lighter;
+    color: $blue-darkest;
     font-size: 18px;
     letter-spacing: 0.025em;
     line-height: 1;
@@ -178,9 +182,9 @@ textarea {
 // BUTTON ///////////////////////////////////////
 input[type="submit"] {
   appearance: none;
-  background-color: $blue-darker;
+  background-color: $blue-medium;
   border: 1px solid $blue-darkest;
-  color: white;
+  color: $blue-darkest;
   font-size: 1.1em;
   letter-spacing: 0.025em;
   margin: 0.7em auto 0.3em;
@@ -193,17 +197,18 @@ input[type="submit"] {
   -moz-appearance: none;
 
   &:focus {
+    background-color: darken($blue-medium, 10%);
     box-shadow: 0 0 0 3px white, 0 0 0 6px $blue-darkest;
     outline: none;
   }
 
   &:hover {
-    background-color: darken($blue-darker, 10%);
+    background-color: darken($blue-medium, 10%);
     text-decoration: underline;
   }
 
   &:active {
-    background-color: darken($blue-darker, 20%);
+    background-color: darken($blue-medium, 20%);
     position: relative;
     text-decoration: none;
     top: 1px;
