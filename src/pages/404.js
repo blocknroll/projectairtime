@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import errorStyles from "../styles/errorStyles.module.scss"
 
 export default function Success() {
   return (
     <Layout>
+      <SEO title="404" />
       <section className={errorStyles.section}>
         <div className={errorStyles.container}>
           <span role="img" aria-label="face with monocle">
