@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -11,18 +12,37 @@ import Form from "../components/form"
 
 export default function Home({ data }) {
   return (
-    <Layout>
-      <Img
-        fluid={data.img04.childImageSharp.fluid}
-        alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
-      />
-      <Intro />
-      <Videos />
-      <News />
-      <Sponsors />
-      <About />
-      <Form />
-    </Layout>
+    <div>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+        meta={[
+          {
+            name: `description`,
+            content: `Project Airtime is a Nevada 501(c)(3) non-profit based in Draper, Utah. Our mission is take EVERYONE flying with a paraglider. When we say EVERYONE, we mean it. No exclusions. From special needs individuals to those with brain and spinal cord injuries. Individuals with illness, as well as the elderly and veterans. Our co-pilots have one thing in common, they want to fly!`,
+          },
+          {
+            charSet: `utf-8`,
+          },
+        ]}
+      >
+        <title>Project Airtime</title>
+        <link rel="canonical" href="http://localhost:8000/" />
+      </Helmet>
+      <Layout>
+        <Img
+          fluid={data.img04.childImageSharp.fluid}
+          alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
+        />
+        <Intro />
+        <Videos />
+        <News />
+        <Sponsors />
+        <About />
+        <Form />
+      </Layout>
+    </div>
   )
 }
 
