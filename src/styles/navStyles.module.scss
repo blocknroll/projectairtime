@@ -1,4 +1,5 @@
 @import "colors";
+@import "typography";
 
 // breakpoints
 $mobile-xs: 380px;
@@ -115,6 +116,7 @@ nav {
   a {
     color: $blue-darker;
     display: block;
+    font-family: "Raleway-Medium-500", Arial, Helvetica, sans-serif;
     font-weight: 500;
     padding: 20px;
     text-align: center;
