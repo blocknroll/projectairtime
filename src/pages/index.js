@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Videos from "../components/videos"
@@ -11,18 +12,21 @@ import Form from "../components/form"
 
 export default function Home({ data }) {
   return (
-    <Layout>
-      <Img
-        fluid={data.img04.childImageSharp.fluid}
-        alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
-      />
-      <Intro />
-      <Videos />
-      <News />
-      <Sponsors />
-      <About />
-      <Form />
-    </Layout>
+    <div>
+      <Layout>
+        <SEO title="Home" />
+        <Img
+          fluid={data.img04.childImageSharp.fluid}
+          alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
+        />
+        <Intro />
+        <Videos />
+        <News />
+        <Sponsors />
+        <About />
+        <Form />
+      </Layout>
+    </div>
   )
 }
 

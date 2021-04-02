@@ -3,11 +3,13 @@ import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import successStyles from "../styles/successStyles.module.scss"
 
 export default function Success({ data }) {
   return (
     <Layout>
+      <SEO title="Success" />
       <section className={successStyles.section}>
         <Img
           className={successStyles.imgResponsive}
