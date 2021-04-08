@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Intro from "../components/intro"
@@ -15,8 +15,8 @@ export default function Home({ data }) {
     <div>
       <Layout>
         <SEO title="Home" />
-        <GatsbyImage
-          image={data.img04.childImageSharp.gatsbyImageData}
+        <StaticImage
+          src="../images/04.jpg"
           alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
         />
         <Intro />
