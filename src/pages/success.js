@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import successStyles from "../styles/successStyles.module.scss"
@@ -11,11 +11,10 @@ export default function Success({ data }) {
     <Layout>
       <SEO title="Success" />
       <section className={successStyles.section}>
-        <Img
+        <GatsbyImage
+          image={data.ChrisThumbsUp.childImageSharp.gatsbyImageData}
           className={successStyles.imgResponsive}
-          fluid={data.ChrisThumbsUp.childImageSharp.fluid}
-          alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah."
-        />
+          alt="Chris Santacroce and his co-pilot paragliding at Point of the Mountain in Draper, Utah." />
         <div className={successStyles.container}>
           <h1>"YEAH BUDDY!!!"</h1>
           <h3>
@@ -32,18 +31,15 @@ export default function Success({ data }) {
         </div>
       </section>
     </Layout>
-  )
+  );
 }
 
 // paths relative to "./src/images/" defined in gatsby-config.js > gatsby-source-filesystem
-export const query = graphql`
-  query {
-    ChrisThumbsUp: file(relativePath: { eq: "Chris-thumbsup.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`{
+  ChrisThumbsUp: file(relativePath: {eq: "Chris-thumbsup.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `
