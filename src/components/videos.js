@@ -1,6 +1,12 @@
 import React from "react"
 import Container from "../components/container"
 import YoutubeThumbnail from "../components/youtubeThumbnail"
+import joestoneYoutubeThumbnail from "../images/joestone-youtube-thumbnail.jpg"
+import lucasYoutubeThumbnail from "../images/lucas-youtube-thumbnail.jpg"
+import jasonYoutubeThumbnail from "../images/jason-youtube-thumbnail.jpg"
+import sereiYoutubeThumbnail from "../images/serei-youtube-thumbnail.jpg"
+import donnaYoutubeThumbnail from "../images/donna-youtube-thumbnail.jpg"
+import larryYoutubeThumbnail from "../images/larry-youtube-thumbnail.jpg"
 import videoStyles from "../styles/videoStyles.module.scss"
 import navStyles from "../styles/navStyles.module.scss"
 
@@ -16,42 +22,42 @@ export default function Videos() {
           {/* Joe Stone */}
           <YoutubeThumbnail
             link="/joestone"
-            videoId="k2-cvuGmWvc"
+            src={joestoneYoutubeThumbnail}
             caption="Joe"
           />
 
           {/* Lucas */}
           <YoutubeThumbnail
             link="/lucas"
-            videoId="5jLUtWCr9fQ"
+            src={lucasYoutubeThumbnail}
             caption="Lucas"
           />
 
           {/* Jason */}
           <YoutubeThumbnail
             link="/jason"
-            videoId="CJFugtJlC_s"
+            src={jasonYoutubeThumbnail}
             caption="Jason"
           />
 
           {/* Serei */}
           <YoutubeThumbnail
             link="/serei"
-            videoId="rX511v45TIU"
+            src={sereiYoutubeThumbnail}
             caption="Serei"
           />
 
           {/* Donna */}
           <YoutubeThumbnail
             link="/donna"
-            videoId="3HqPbHUSeU4"
+            src={donnaYoutubeThumbnail}
             caption="Donna"
           />
 
           {/* Larry */}
           <YoutubeThumbnail
             link="/larry"
-            videoId="VzrlexXcEtM"
+            src={larryYoutubeThumbnail}
             caption="Larry"
           />
         </div>
