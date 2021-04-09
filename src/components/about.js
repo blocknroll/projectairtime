@@ -2,6 +2,9 @@ import React from "react"
 import Container from "../components/container"
 import { Link } from "gatsby"
 import YoutubeThumbnail from "../components/youtubeThumbnail"
+import myoverdriveYoutubeThumbnail from "../images/myoverdrive-youtube-thumbnail.jpg"
+import thelineYoutubeThumbnail from "../images/theline-youtube-thumbnail.jpg"
+import thefingerYoutubeThumbnail from "../images/thefinger-youtube-thumbnail.jpg"
 import aboutStyles from "../styles/aboutStyles.module.scss"
 import navStyles from "../styles/navStyles.module.scss"
 
@@ -54,21 +57,21 @@ export default function About() {
           {/* My Overdrive by Chris Santacroce | Discount Tire */}
           <YoutubeThumbnail
             link="/myoverdrive"
-            videoId="8fOLPpmteTg"
+            src={myoverdriveYoutubeThumbnail}
             caption="My Overdrive by Chris Santacroce"
           />
 
           {/* Chris Santacroce | The Line Tahoe */}
           <YoutubeThumbnail
             link="/theline"
-            videoId="RjDtVkBHRHw"
+            src={thelineYoutubeThumbnail}
             caption="Chris Santacroce | The Line Tahoe"
           />
 
           {/* The Finger: Paragliding Kite Trick with Chris Santacroce */}
           <YoutubeThumbnail
             link="/thefinger"
-            videoId="1S2InrR1pkQ"
+            src={thefingerYoutubeThumbnail}
             caption="Paragliding Kite Trick with Chris Santacroce"
           />
         </div>
