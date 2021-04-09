@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import videoStyles from "../styles/videoStyles.module.scss"
 
-const YoutubeThumbnail = ({ link, videoId, caption }) => (
+const YoutubeThumbnail = ({ link, src, caption }) => (
   <div>
     <div className={videoStyles.youtubeThumbnailContainer}>
       <Link to={link}>
@@ -13,7 +13,7 @@ const YoutubeThumbnail = ({ link, videoId, caption }) => (
         />
         <img
           className={videoStyles.youtubeThumbnail}
-          src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+          src={`${src}`}
           alt="Thumbnail"
           loading="lazy"
           height="360"
