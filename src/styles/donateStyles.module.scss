@@ -1,0 +1,72 @@
+@import "colors";
+@import "typography";
+
+.section {
+  background-color: $blue-medium;
+
+  .grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  h2 {
+    color: $blue-darkest;
+    margin: 0;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+
+    &:hover,
+    &:focus {
+      color: $blue-medium;
+      outline: 1px dotted $blue-darkest;
+    }
+  }
+
+  p {
+    color: white;
+    margin: 0;
+  }
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $blue-medium;
+      outline: 1px dotted white;
+    }
+  }
+
+  form {
+    background-color: $blue-medium;
+    border: none;
+    box-shadow: none;
+    display: block;
+    padding: 0px;
+    transition: none;
+    width: 100%;
+
+    // Media Queries
+    @media screen and (min-width: 576px) {
+      max-width: 60vw;
+    }
+  }
+
+  // FOCUS EFFECT /////////////////////////////////
+  form:focus-within {
+    box-shadow: none;
+    transform: none;
+
+    // Remove for those who don't want animation.
+    @media screen and (prefers-reduced-motion: reduce) {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
