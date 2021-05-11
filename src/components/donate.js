@@ -20,7 +20,7 @@ export default function Donate() {
             <input
               type="hidden"
               name="hosted_button_id"
-              value="QZ5W7DG68EWD6"
+              value="N9N95E4AKUVZY"
             />
             <input
               className={donateStyles.button}
